@@ -74,23 +74,24 @@ p {
 
 
 @media (min-width: 767px) and (max-width: 979px) {
+    .Titulo {
+        width: 100%;
+
+    }
+
     #container {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-
-    #Pudding,
-    #Macarons,
-    #Ajilenakh {
-        width: calc(39% - 25px);
-        min-width: 220px;
+        height: 400px;
+        height: 200px;
     }
 
     .box {
         align-content: center;
         text-align: center;
+         width: calc(39% - 25px);
+        min-width: 220px;
     }
 
 }
@@ -111,15 +112,8 @@ p {
     }
 
 
-      .box {
-        align-content: center;
-        text-align: center;
-    }
-/*
-    #Pudding,
-    #Macarons,
-    #Ajilenakh {
+    .box{
         width: calc(30% - 20px);
 
     }
-        */}
+}
