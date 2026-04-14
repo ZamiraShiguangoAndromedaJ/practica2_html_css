@@ -15,7 +15,7 @@ body {
 .Titulo {
     border: 3px solid #ffffff;
     margin: 20px;
-    border-block-color: #f3dcb3; 
+    border-block-color: #f3dcb3;
 }
 
 #Pudding {
@@ -77,6 +77,7 @@ p {
     #container {
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
 
@@ -86,7 +87,8 @@ p {
         width: calc(39% - 25px);
         min-width: 220px;
     }
-.box {
+
+    .box {
         align-content: center;
         text-align: center;
     }
@@ -95,21 +97,29 @@ p {
 
 
 
-@media (min-width: 979px) { 
-    
+@media (min-width: 979px) {
+
     .Titulo {
-        width: 100%; 
-       
+        width: 100%;
+
     }
 
     #container {
         display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap;    
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    #Pudding, #Macarons, #Ajilenakh {
-        width: calc(30% - 20px); 
-       
+
+      .box {
+        align-content: center;
+        text-align: center;
     }
-}
+/*
+    #Pudding,
+    #Macarons,
+    #Ajilenakh {
+        width: calc(30% - 20px);
+
+    }
+        */}
