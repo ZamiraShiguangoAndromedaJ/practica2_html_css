@@ -4,60 +4,112 @@ body {
     background: #ffffff;
 }
 
-
-#conteiner {
+#container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 
 }
 
-#Titulo {
-
+.Titulo {
     border: 3px solid #ffffff;
     margin: 20px;
-    border-block-color: #f3dcb3;
-    writing-mode: horizontal-tb;
-     text-align: center;
+    border-block-color: #f3dcb3; 
 }
 
 #Pudding {
     background: #fdf2df;
     border: 3px solid #f2d5a2;
     border-radius: 12px;
-    margin: 90px;
-
+    margin: 20px;
 }
 
 #Macarons {
     background: #fdf2df;
     border: 3px solid #f2d5a2;
     border-radius: 12px;
-    margin: 90px;
+    margin: 20px;
 }
 
 #Ajilenakh {
     background: #fdf2df;
     border: 3px solid #f2d5a2;
     border-radius: 12px;
-    margin: 90px;
-
-
+    margin: 20px;
 }
 
+
 h3 {
-    font-weight: norma
-    
+    font-weight: normal;
 }
 
 p {
     text-wrap: balance;
+    text-align: justify;
 }
 
 .comida {
     border-radius: 12px;
     margin: 20px;
-    width: 25%;
+    width: 60%;
+}
 
+
+/*:(*/
+@media (max-width: 767px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .box {
+        align-content: center;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 767px) and (max-width: 979px) {
+    #container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    #Pudding,
+    #Macarons,
+    #Ajilenakh {
+        width: calc(39% - 25px);
+        min-width: 220px;
+    }
+.box {
+        align-content: center;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (min-width: 979px) { 
+    
+    .Titulo {
+        width: 100%; 
+       
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;    
+    }
+
+    #Pudding, #Macarons, #Ajilenakh {
+        width: calc(30% - 20px); 
+       
+    }
 }
