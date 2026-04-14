@@ -1,0 +1,63 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px;
+    background: #ffffff;
+}
+
+
+#conteiner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#Titulo {
+
+    border: 3px solid #ffffff;
+    margin: 20px;
+    border-block-color: #f3dcb3;
+    writing-mode: horizontal-tb;
+     text-align: center;
+}
+
+#Pudding {
+    background: #fdf2df;
+    border: 3px solid #f2d5a2;
+    border-radius: 12px;
+    margin: 90px;
+
+}
+
+#Macarons {
+    background: #fdf2df;
+    border: 3px solid #f2d5a2;
+    border-radius: 12px;
+    margin: 90px;
+}
+
+#Ajilenakh {
+    background: #fdf2df;
+    border: 3px solid #f2d5a2;
+    border-radius: 12px;
+    margin: 90px;
+
+
+}
+
+h3 {
+    font-weight: norma
+    
+}
+
+p {
+    text-wrap: balance;
+}
+
+.comida {
+    border-radius: 12px;
+    margin: 20px;
+    width: 25%;
+
+}
